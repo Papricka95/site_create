@@ -5,6 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding-bottom: 20px
     &__offer
       margin-left: 14px
     &__name
@@ -25,6 +26,10 @@
     font-size: 12px
     line-height: 15px
 
+  // &-grid
+  //   &__swiper
+  //     width: 600px
+  //     height: 300px
   // &-info
   //   &__rating
   //     width: 65px
@@ -52,6 +57,45 @@
   //   font-size: 8px
   //   line-height: 10px
   //   color: $secondary
+
+.swiper
+  width: 100%
+  height: 450px
+  position: relative
+  border-radius: 8px
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    z-index: 2
+.slider
+  width: 728px
+  &-button
+    position: absolute
+    top: 50% //Корректирует высоту кнопки на половину всей картинки-родителя, но на середине будет верхушка кнопки
+    transform: translateY(-50%) //Корректирует на половину высоты кнопки обратно вверх
+    z-index: 5
+    width: 30px
+    height: 30px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat //убрать повторение фона
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    &--next
+      right: 18px
+      background-image: url(../img/arrow-next.svg)
+
+    &--prev
+      left: 18px
+      background-image: url(../img/arrow-prev.svg)
 
 .stars
   flex-basis: 100%
