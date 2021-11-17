@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
-  effect: "cube",
+  // effect: "cube",
   // And if we need scrollbar
   // scrollbar: {
   //   el: '.swiper-scrollbar',
