@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/blocks/reviews.sass"
+    ],
+    "names": [],
+    "file": "reviews.css"
+}
