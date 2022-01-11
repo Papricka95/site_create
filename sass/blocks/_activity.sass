@@ -1,0 +1,60 @@
+.activity
+  padding-bottom: 100px
+  &__title
+    margin-top: 60px
+    margin-bottom: 57px
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+    color: #000000
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &-cart
+    width: 255px
+    height: 255px
+    position: relative
+    border-radius: 6px
+    overflow: hidden
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+    &__photo
+      object-fit: cover
+      position: absolute
+      width: 100%
+      height: 100%
+      z-index: -2
+    &__text
+      position: absolute
+      top: 143px
+      left: 26px
+      max-width: 200px
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      color: #FFFFFF
+    &__button
+      position: absolute
+      top: 201px
+      left: 26px
+      min-width: 100px
+      min-height: 30px
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 16px
+      border-radius: 4px
+      background-color: $primary
+      border: none
+      color: $light
+      cursor: pointer
